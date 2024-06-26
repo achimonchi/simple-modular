@@ -2,7 +2,7 @@ package service
 
 import (
 	"context"
-	"simple-modular/modules/user/domain"
+	"simple-modular/modules/user/internal/domain"
 )
 
 type service struct {
@@ -19,5 +19,7 @@ func NewService(repo repository) service {
 // jadi kontrak di define di service/consumer
 type repository interface {
 	FindAll() (users []domain.User, err error)
+	FindUserById(ctx context.Context, userId int) (user domain.User, err error)
 	Insert(ctx context.Context, user domain.User) (err error)
+	UpdateBalance(ctx context.Context, userId int, balance int) (err error)
 }

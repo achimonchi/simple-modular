@@ -5,3 +5,7 @@ type User struct {
 	Name    string
 	Balance int
 }
+
+func (u User) IsExists() bool {
+	return u.Id != 0
+}

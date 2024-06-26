@@ -3,12 +3,12 @@ package adapter
 import (
 	"context"
 	"simple-modular/modules/transaction/domain"
-	userDomain "simple-modular/modules/user/domain"
+	userEntity "simple-modular/modules/user/entity"
 )
 
 // depend to userDomain
 type userRepository interface {
-	FindUserById(ctx context.Context, userId int) (user userDomain.User, err error)
+	FindUserById(ctx context.Context, userId int) (user userEntity.User, err error)
 	UpdateBalance(ctx context.Context, userId int, balance int) (err error)
 }
 

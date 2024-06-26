@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 	"simple-modular/internal/data"
-	"simple-modular/modules/user/domain"
+	"simple-modular/modules/user/internal/domain"
 )
 
 // FindAll implements service.repository.

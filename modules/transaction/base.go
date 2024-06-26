@@ -6,7 +6,7 @@ import (
 	"simple-modular/modules/transaction/handler"
 	"simple-modular/modules/transaction/repository"
 	"simple-modular/modules/transaction/service"
-	userRepository "simple-modular/modules/user/repository"
+	userHandler "simple-modular/modules/user/domainhandler"
 
 	"github.com/gofiber/fiber/v2"
 )
@@ -24,7 +24,7 @@ func NewtransactionModule(router fiber.Router) transactionModule {
 func (t transactionModule) Run() {
 	log.Println("Running transaction module")
 	repo := repository.NewRepository()
-	userRepo := userRepository.NewRepository()
+	userRepo := userHandler.GetHandler()
 	userAdapter := adapter.NewUserAdapter(userRepo)
 
 	svc := service.NewService(repo)

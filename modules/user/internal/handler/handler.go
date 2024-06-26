@@ -2,7 +2,7 @@ package handler
 
 import (
 	"context"
-	"simple-modular/modules/user/domain"
+	"simple-modular/modules/user/internal/domain"
 )
 
 // handler membutuhkan service

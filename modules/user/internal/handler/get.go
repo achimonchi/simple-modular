@@ -3,7 +3,7 @@ package handler
 import (
 	"net/http"
 	"simple-modular/internal/system"
-	"simple-modular/modules/user/domain"
+	"simple-modular/modules/user/internal/domain"
 
 	"github.com/gofiber/fiber/v2"
 )

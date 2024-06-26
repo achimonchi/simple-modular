@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 	"simple-modular/internal/data"
-	"simple-modular/modules/user/domain"
+	"simple-modular/modules/user/internal/domain"
 )
 
 // Insert implements service.repository.
