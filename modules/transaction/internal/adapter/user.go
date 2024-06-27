@@ -2,7 +2,7 @@ package adapter
 
 import (
 	"context"
-	"simple-modular/modules/transaction/domain"
+	"simple-modular/modules/transaction/internal/domain"
 	userEntity "simple-modular/modules/user/entity"
 )
 

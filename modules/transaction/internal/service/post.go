@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 	"log"
-	"simple-modular/modules/transaction/domain"
+	"simple-modular/modules/transaction/internal/domain"
 )
 
 func (s service) Transfer(ctx context.Context, req domain.Transaction) (err error) {

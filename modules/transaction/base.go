@@ -2,10 +2,10 @@ package transaction
 
 import (
 	"log"
-	"simple-modular/modules/transaction/adapter"
-	"simple-modular/modules/transaction/handler"
-	"simple-modular/modules/transaction/repository"
-	"simple-modular/modules/transaction/service"
+	"simple-modular/modules/transaction/internal/adapter"
+	"simple-modular/modules/transaction/internal/handler"
+	"simple-modular/modules/transaction/internal/repository"
+	"simple-modular/modules/transaction/internal/service"
 	userHandler "simple-modular/modules/user/domainhandler"
 
 	"github.com/gofiber/fiber/v2"

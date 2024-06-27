@@ -2,7 +2,7 @@ package handler
 
 import (
 	"context"
-	"simple-modular/modules/transaction/domain"
+	"simple-modular/modules/transaction/internal/domain"
 )
 
 type service interface {

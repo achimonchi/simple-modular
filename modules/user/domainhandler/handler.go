@@ -5,6 +5,7 @@ import (
 	"simple-modular/modules/user/internal/domain"
 )
 
+// this handler is for handle intra-domain communication
 type handler struct {
 	svc service
 }

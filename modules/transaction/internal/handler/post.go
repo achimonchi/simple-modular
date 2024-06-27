@@ -2,7 +2,7 @@ package handler
 
 import (
 	"simple-modular/internal/system"
-	"simple-modular/modules/transaction/domain"
+	"simple-modular/modules/transaction/internal/domain"
 
 	"github.com/gofiber/fiber/v2"
 )

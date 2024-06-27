@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 	"simple-modular/internal/data"
-	"simple-modular/modules/transaction/domain"
+	"simple-modular/modules/transaction/internal/domain"
 	"time"
 )
 
